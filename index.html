@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <!-- displays site properly based on user's device -->
@@ -13,17 +13,58 @@
         .attribution a { color: hsl(228, 45%, 44%); }
     </style>
 </head>
-<body class="bg-pink-100 h-screen w-screen p-2 font-sans">
-<main class="container bg-pink-100 h-full w-full">
-    <section class="container bg-pink-200 h-2/3 w-full md:bg-pink-200 md:h-full md:w-2/3 sm:h-2/3 sm:w-full">
-        <section class="container bg-pink-300 h-1/2 w-full md:bg-pink-300 md:h-full md:w-1/2 sm:h-1/2 sm:w-full"></section>
-    </section>
+<body class="bg-gray-100 h-screen w-screen">
+<main class="h-full w-full p-2">
+    <!--default for tailwind is mobile.-->
+    <!--background colours using grid-->
+    <!--main grid-->
+    <div class="grid grid-cols-6 grid-rows-5 gap-0 h-full w-full">
+        <!-------------------row 1------------------------------>
+        <div class="bg-pink-300 order-1">1</div>
+        <div class="bg-pink-300 order-2">2</div>
+        <div class="bg-pink-200 row-span-1 order-3">3</div>
+        <div class="bg-pink-200 row-span-1 order-4">4</div>
+        <div class="bg-pink-100 row-span-1 order-5">5</div>
+        <div class="bg-pink-100 row-span-1 order-6">6</div>
+        <!-------------------row 2------------------------------>
+        <div class="bg-pink-300 col-span-2 row-span-1 order-7">7
+            <h1 class="text-5xl">Kerry Clements</h1>
+        </div>
+        <div class="bg-pink-200 row-span-1 order-8">8</div>
+        <div class="bg-pink-200 row-span-1 order-9">9</div>
+        <div class="bg-pink-100 row-span-1 order-10">10</div>
+        <div class="bg-pink-100 row-span-1 order-11">11</div>
+        <!-------------------row 3 & 4------------------------------>
+        <div class="bg-pink-300 col-span-2 row-span-3 order-12">12
+            <h2 class="text-2xl">About Me:</h2>
+            <p class="text-1xl">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                It has survived not only five centuries, but also the leap into electronic typesetting,
+                remaining essentially unchanged.
+            </p>
+        </div>
+        <div class="bg-pink-200 row-span-1 order-12">13</div>
+        <div class="bg-pink-200 row-span-1 order-12">14</div>
 
+        <div class="container box-border bg-pink-100 row-span-2 col-span-2 flex order-12">
+            <img src="/images/kerry.jpeg" class="h-auto w-auto border-solid border-2 border-white" alt="Profile Pic">
+        </div>
+        <div class="bg-pink-200 col-span-1 row-span-1 order-12">15</div>
+        <div class="bg-pink-200 row-span-1 order-12">16</div>
+        <!-------------------row 5------------------------------>
+        <div class="bg-pink-200 col-span-2 order-12">17
+            <h2 class="text-2xl">Contact Me:</h2>
+            <p class="text-1xl">kerryclements@me.com</p>
+        </div>
+        <div class="bg-pink-100 row-span-1 col-span-1 order-12">18</div>
+        <div class="bg-pink-100 row-span-1 order-12">19</div>
+    </div>
 </main>
 
 <div class="attribution">
-  Coded by <a href="#">KerryCX</a>
+  Coded by <a href="#">Kerry Clements</a>
 </div>
 </body>
-
 </html>
