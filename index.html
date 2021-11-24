@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <!-- displays site properly based on user's device -->
@@ -13,17 +13,32 @@
         .attribution a { color: hsl(228, 45%, 44%); }
     </style>
 </head>
+<body class="bg-gray-100 h-screen w-screen">
+<main class="h-full w-full">
+
+<!--
 <body class="bg-pink-100 h-screen w-screen p-2 font-sans">
-<main class="container bg-pink-100 h-full w-full">
-    <section class="container bg-pink-200 h-2/3 w-full md:bg-pink-200 md:h-full md:w-2/3 sm:h-2/3 sm:w-full">
-        <section class="container bg-pink-300 h-1/2 w-full md:bg-pink-300 md:h-full md:w-1/2 sm:h-1/2 sm:w-full"></section>
-    </section>
+<main class="container static bg-pink-100 h-full w-full">
 
+    <main class="container flex  bg-pink-200 h-2/3 w-full md:bg-pink-200 md:h-full md:w-2/3 sm:h-2/3 sm:w-full">
+        <main class="container bg-pink-300 h-1/2 w-full  sm:h-1/2 sm:w-full md:bg-pink-300 md:h-full md:w-1/2">
+            <p class="absolute">300</p>
+        </main>
+        <p class="relative">200</p>
+    </main>
+    <p class="relative top right-15">100*</p>
+   </main>
+</body>  -->
+    <!--default for tailwind is mobile.-->
+    <div class="grid grid-cols-3 gap-0 h-full w-full" id="hello">
+        <div class="bg-pink-100">1</div>
+        <div class="bg-pink-200">2</div>
+        <div class="bg-pink-300">3</div>
+
+    </div>
 </main>
-
 <div class="attribution">
-  Coded by <a href="#">KerryCX</a>
+  Coded by <a href="#">Kerry Clements</a>
 </div>
 </body>
-
 </html>
