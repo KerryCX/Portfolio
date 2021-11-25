@@ -14,50 +14,52 @@
     </style>
 </head>
 <body class="bg-gray-100">
-<main class="h-full w-full p-2 px-2 sm:px-20">
+<main class="h-screen w-screen p-2 px-2 sm:px-20">
     <!--default for tailwind is mobile.-->
     <!--sm: for larger screens-->
     <!--background colours using grid-->
     <!--main grid-->
     <div class="grid grid-cols-6 grid-rows-12 gap-0 h-full w-full
-                sm:grid sm:grid-cols-6 sm:grid-rows-6 sm:gap-0 sm:h-full sm:w-full">
+                sm:grid sm:grid-cols-6 sm:grid-rows-5 sm:gap-0 sm:h-full sm:w-full">
         <!-------------------row 1------------------------------>
-        <div class="bg-pink-300 order-2 row-span-1 col-span-1
-                    sm:bg-pink-300 sm:order-1 sm-row-span-1 sm:col-span-1">1
+        <div class="bg-pink-500 order-2 row-span-1 col-span-1
+                    sm:bg-pink-500 sm:order-1 sm-row-span-1 sm:col-span-1">1
         </div>
-        <div class="bg-pink-300 order-2 row-span-1 col-span-1
-                    sm:bg-pink-300 sm:order-1 sm-row-span-1 sm:col-span-1">2
+        <div class="bg-pink-500 order-2 row-span-1 col-span-1
+                    sm:bg-pink-500 sm:order-1 sm-row-span-1 sm:col-span-1 sm:bg-gradient-to-r sm:from-pink-500  sm:to-pink-200">2
         </div>
-        <div class="bg-pink-300 row-span-1 order-4
+        <div class="bg-pink-500 row-span-1 order-4
                     sm:bg-pink-200 sm:order-1 sm-row-span-1 sm:col-span-1">3
         </div>
-        <div class="bg-pink-300 row-span-1 order-4
-                    sm:bg-pink-200 sm:order-1 sm-row-span-1 sm:col-span-1">4
+        <div class="bg-pink-500 row-span-1 order-4
+                    sm:order-1 sm-row-span-1 sm:col-span-1 sm:bg-gradient-to-r sm:from-pink-200 sm:to-pink-100">4
         </div>
-        <div class="bg-pink-300 row-span-1 order-4
+        <div class="bg-pink-500 row-span-1 order-4
                     sm:bg-pink-100 sm:order-1 sm-row-span-1 sm:col-span-1">5
         </div>
-        <div class="bg-pink-300 row-span-1 order-4
+        <div class="bg-pink-500 row-span-1 order-4
                     sm:bg-pink-100 sm:order-1 sm-row-span-1 sm:col-span-1">6
         </div>
         <!-------------------row 2------------------------------>
-        <div class="bg-pink-300 col-span-6 row-span-1 order-1
-                    sm:bg-pink-300 sm:col-span-2 sm:row-span-1 sm:order-2">7
-            <h1 class="text-5xl">Kerry Clements</h1>
+        <div class="bg-pink-500 col-span-6 row-span-1 order-1
+                    sm:container sm:border-box  sm:col-span-2 sm:row-span-1 sm:order-3
+                     sm:bg-yellow-300">7
+            <h1 class="text-5xl text-center">Kerry Clements</h1>
         </div>
-        <div class="bg-pink-300 row-span-1 order-4
-                    sm:bg-pink-200 sm:row-span-1 sm:order-8">8</div>
-        <div class="bg-pink-300 row-span-1 order-4
-                    sm:bg-pink-200 sm:row-span-1 sm:order-8">9</div>
+        <div class="bg-pink-500 row-span-1 order-4
+                    sm:bg-pink-500 sm:row-span-1 sm:order-2">8</div>
+        <div class="bg-pink-500 row-span-1 order-4
+                    sm:bg-green-300 sm:row-span-1 sm:order-8">9</div>
         <div class="bg-pink-100 row-span-1 order-7
-                    sm:bg-pink-100 sm:row-span-1 sm:order-8">10</div>
+                    sm:bg-green-300 sm:row-span-1 sm:order-8">10</div>
         <div class="bg-pink-100 row-span-1 order-8
-                    sm:bg-pink-100 sm:row-span-1 sm:order-8">11</div>
-        <!-------------------row 3 & 4------------------------------>
+                    sm:bg-green-300 sm:row-span-1 sm:order-8">11</div>
+        <!-------------------About me------------------------------>
         <div class="bg-pink-200 col-span-6 row-span-2 order-5
-                    sm:bg-pink-300 sm:col-span-2 sm:row-span-3 sm:order-12">12
-            <h2 class="text-1xl sm:text-2xl">About Me:</h2>
-            <p class="text-xs sm:text-sm">
+                    sm:container sm:border-box sm:px-5 sm:bg-green-200 sm:col-span-3 sm:row-span-2 sm:order-9
+                    sm:shadow-2xl sm:mix-blend-multiply sm:border-3 sm:border-yellow-400 sm:border-solid">12
+            <h2 class="text-1xl sm:text-2xl sm:text-center sm:shadow-2xl">Hello, I am Kerry</h2>
+            <p class="text-sm sm:text-base sm:text-center sm:font-bold sm:px-3 sm:pt-5">
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
                 when an unknown printer took a galley of type and scrambled it to make a type specimen book.
@@ -66,41 +68,49 @@
             </p>
         </div>
         <div class="bg-pink-100 row-span-1 order-8
-                    sm:bg-pink-200 sm:row-span-1 sm:order-12"">13</div>
+                    sm:bg-pink-500 sm:row-span-1 sm:order-8">13</div>
         <div class="bg-pink-100 row-span-1 order-8
-                    sm:bg-pink-200 sm:row-span-1 sm:order-12"">14</div>
+                    sm:bg-pink-500 sm:row-span-1 sm:order-10">14</div>
 
-        <div class="container box-border bg-pink-100 row-span-2 col-span-2 flex order-3
-                   sm:container sm:box-border sm:bg-pink-100 sm:row-span-2 sm:col-span-2 sm:flex sm:order-12">
-            <img src="/images/kerry.jpeg" class="h-auto w-auto border-solid border-2 border-white
-                                                 sm:h-auto sm:w-auto sm:border-solid sm:border-2 sm:border-white" alt="Profile Pic">
+        <div class="container box-border bg-green-200 row-span-2 col-span-2 flex order-3
+                   sm:container sm:box-border sm:bg-green-200 sm:row-span-2 sm:col-span-2 sm:flex sm:order-9">
+            <img src="/images/kerry.jpeg" class="h-auto w-auto border-solid border-2 border-white transform scale-90
+                                                 sm:h-auto sm:w-auto sm:border-solid sm:border-4
+                                                 sm:border-green-400 sm:shadow-2xl sm:transform sm:scale-90" alt="Profile Pic">
         </div>
         <div class="bg-pink-100 col-span-1 row-span-1 order-12
-                    sm:bg-pink-200 sm:row-span-1 sm:order-12">15</div>
+                    sm:bg-pink-500 sm:row-span-1 sm:order-10">15</div>
         <div class="bg-pink-100 row-span-1 order-12
-                    sm:bg-pink-200 sm:row-span-1 sm:order-12">16</div>
+                    sm:bg-green-300 sm:row-span-1 sm:order-11">16</div>
         <!-------------------row 5------------------------------>
         <div class="bg-pink-100 col-span-4 order-7
-                    sm:bg-pink-200 sm:col-span-2 sm:order-12">17
-            <h2 class="text-2xl">Contact Me:</h2>
-            <p class="text-1xl">kerryclements@me.com</p>
+                    sm:bg-yellow-300 sm:col-span-2 sm:order-10">17
+            <div class="grid grid-cols-2 grid-rows-2">
+             <a href="https://github.com/KerryCX/"> <img src="/images/Octocat.jpg" class="h-12 w-12 border-solid border-2
+             border-white" alt="GitHubLogo"><h2 class="text-1xl">KerryCX </h2></a>
+
+            <a href="mailto:kerryclements@me.com"><img src="/images/email-icon.jpg" class="h-12 w-12 border-solid border-2
+             border-white" alt="EmailLogo"><h2 class="text-1xl">email me</h2></a>  </div>
         </div>
         <div class="bg-pink-100 row-span-1 col-span-1 order-12
-                    sm:bg-pink-100 sm:row-span-1 sm:col-span-1 sm:order-12">18</div>
+                    sm:bg-green-300 sm:row-span-1 sm:col-span-1 sm:order-12">18</div>
         <div class="bg-pink-100 row-span-1 order-12
-                    sm:bg-pink-100 sm:row-span-1 sm:col-span-1 sm:order-12">19</div>
-        <div class="bg-pink-400 col-span-6 order-12
-                    sm:bg-pink-400 sm:row-span-1 sm:col-span-1 sm:order-12">20</div>
-        <div class="bg-pink-400 col-span-6 order-12
-                    sm:bg-pink-400 sm:row-span-1 sm:col-span-1 sm:order-12">21</div>
-        <div class="bg-pink-400 col-span-6 order-12
-                    sm:bg-pink-400 sm:row-span-1 sm:col-span-1 sm:order-12">22</div>
-        <div class="bg-pink-400 col-span-6 order-12
-                    sm:bg-pink-400 sm:row-span-1 sm:col-span-1 sm:order-12">23</div>
-        <div class="bg-pink-400 col-span-6 order-12
-                    sm:bg-pink-400 sm:row-span-1 sm:col-span-1 sm:order-12">24</div>
-        <div class="bg-pink-400 col-span-6 order-12
-                    sm:bg-pink-400 sm:row-span-1 sm:col-span-1 sm:order-12">25</div>
+                    sm:bg-green-300 sm:row-span-1 sm:col-span-1 sm:order-12">19</div>
+
+    </div>
+<div class="grid grid-cols-1 grid-rows-auto">
+    <div class="bg-pink-400 col-span-6 order-12 h-24
+                    sm:bg-pink-100 sm:row-span-1 sm:col-span-1 sm:order-12">20</div>
+    <div class="bg-pink-400 col-span-6 order-12
+                    sm:bg-pink-100 sm:row-span-1 sm:col-span-1 sm:order-12">21</div>
+    <div class="bg-pink-400 col-span-6 order-12
+                    sm:bg-pink-100 sm:row-span-1 sm:col-span-1 sm:order-12">22</div>
+    <div class="bg-pink-400 col-span-6 order-12
+                    sm:bg-pink-100 sm:row-span-1 sm:col-span-1 sm:order-12">23</div>
+    <div class="bg-pink-400 col-span-6 order-12
+                    sm:bg-pink-100 sm:row-span-1 sm:col-span-1 sm:order-12">24</div>
+    <div class="bg-pink-400 col-span-6 order-12
+                    sm:bg-pink-100 sm:row-span-1 sm:col-span-1 sm:order-12">25</div>
     </div>
 </main>
 
