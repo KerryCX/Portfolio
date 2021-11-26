@@ -42,12 +42,19 @@
         </div>
         <!-------------------Kerry Clements container------------------------------>
         <div class="bg-pink-500 col-span-6 row-span-1 order-1
-                    sm:container sm:border-box sm:col-span-4 sm:row-span-1 sm:order-3
-                    sm:from-green-500 sm:to-green-200 sm:bg-gradient-to-t sm:flex sm:flex-nowrap
+                    sm:container sm:border-box sm:col-span-3 sm:row-span-1 sm:order-3
+                    sm:from-green-500 sm:to-green-300 sm:bg-gradient-to-t sm:flex sm:flex-nowrap
                     sm:items-center sm:justify-center">7
             <h1 class="sm:bg-blue-400 sm:text-8xl sm:text-blue-800 sm:border-8 sm:rounded-2xl
-                        sm:border-blue-800 sm:rounded-sm h-4/5 w-full sm:border-solid p-2 sm:bg-opacity-25">Kerry Clements
+                        sm:border-blue-800 sm:rounded-sm h-4/5 w-full sm:border-solid sm:bg-opacity-25">Kerry Clements
             </h1>
+        </div>
+        <!--top right of main container-->
+        <div class="bg-pink-500 row-span-1 order-4
+                     sm:row-span-1 sm:order-3 sm:from-green-500 sm:to-blue-400 sm:bg-gradient-to-r">
+            <div class=" sm:from-green-300 sm:to-green-500 h-full sm:bg-gradient-to-b sm:bg-opacity-0
+            sm:bg-opacity-0 sm:border-blue-200 sm:border-2xl sm:rounded-tr-2xl sm:border-solid">
+            </div>
         </div>
         <div class="bg-pink-500 row-span-1 order-4
                     sm:bg-pink-500 sm:row-span-1 sm:order-2">8</div>
@@ -67,7 +74,7 @@
             <div class="sm:border-8 sm:rounded-2xl
                         sm:border-blue-800 sm:rounded-sm h-4/5 w-full sm:border-solid">
                 <h2 class="text-1xl sm:text-4xl sm:text-left sm:bg-opacity-25 sm:bg-blue-400">Hello, I am Kerry</h2>
-                <div class="text-sm sm:text-3xl sm:text-left sm:font-bold sm:pr-3 sm:pt-4 sm:pb-6  sm:bg-blue-400 sm:bg-opacity-25">
+                <div class="text-sm sm:text-3xl sm:text-left sm:font-bold sm:pr-3 sm:pt-4 sm:pb-6  sm:bg-blue-400 sm:bg-opacity-25 sm:whitespace-wrap">
                     <div>
                         I am a web developer based in Bristol, UK.
                         Returning to work in IT after starting a family, I have retrained as a web developer.
@@ -85,11 +92,14 @@
 
         <!-------------------container for Photo------------------------------>
         <div class="container box-border bg-green-200 row-span-2 col-span-2 flex order-3
-                   sm:container sm:box-border sm:bg-blue-800 sm:border-blue-900 sm:border-8 sm:border-solid sm:row-span-2 sm:col-span-1 sm:flex sm:order-9">
-            <!-------------------Photo------------------------------>
+                   sm:container sm:box-border sm:bg-blue-800 sm:col-span-1 sm:flex sm:order-9">
+            <div class="sm:from-green-500 sm:to-green-200 sm:bg-gradient-to-b">
+                <!-------------------Photo------------------------------>
             <img src="/images/kerry.jpeg" class="h-auto w-auto border-solid border-2 border-white transform scale-90
-                                                 sm:h-auto sm:w-auto sm:border-solid sm:border-2 sm:rounded-2xl
-                                                 sm:border-blue-900 sm:shadow-2xl sm:transform sm:scale-90" alt="Profile Pic">
+                                                 sm:h-auto sm:w-auto sm:border-solid sm:border-8 sm:rounded-2xl
+                                                 sm:border-blue-900 sm:shadow-2xl sm:transform sm:scale-90 sm:bg-opacity-25
+                            sm:transition sm:duration-500 sm:origin-center sm-ease-in-out sm:transform sm:box-shadow  sm:hover:rotate-3
+                            " alt="Profile Pic"></div>
         </div>
         <div class="bg-pink-100 row-span-1 order-8
                    sm:row-span-2 sm:order-9 sm:bg-gradient-to-r sm:from-blue-400 sm:to-blue-800">move</div>
@@ -100,7 +110,7 @@
         <!-------------------contact me------------------------------>
         <!-------------------outside container----------------------->
         <div class="box-border bg-pink-100 col-span-4 order-7 sm:flex
-                    sm:container sm:box-border sm:bg-yellow-300 sm:col-span-1 sm:order-10 sm:border-l-8 sm:border-r-8 pt-12 sm:border-blue-800 sm:rounded-sm sm:border-solid">17
+                    sm:container sm:box-border sm:bg-green-200 sm:col-span-1 sm:order-10 pt-12">17
             <!-------contact me split into columns, one for each contact method------------------>
             <div class="sm:container sm:flex sm:box-border grid grid-cols-2 grid-rows-1">
              <!-------------------Git Hub contact-------------------------->
@@ -109,9 +119,10 @@
                      <a href="https://github.com/KerryCX/">
                         <img src="/images/Octocat.jpg"
                              class="border-yellow-600 h-16 w-16 border-solid border-2 hover:border-yellow-800
-                                    sm:border-yellow-600 sm:h-1/2 sm:w-auto sm:border-solid sm:rounded-2xl sm:border-2 sm:hover:border-yellow-800"
+                                    sm:border-yellow-600 sm:h-1/2 sm:w-auto sm:border-solid sm:rounded-2xl sm:border-2
+                                    sm:hover:border-yellow-800"
                              alt="My Git Hub :-)">
-                     <h2 class="text-1xl sm:text-2xl">KerryCX</h2>
+                     <h2 class="text-1xl sm:text-2xl tracking-wide">KerryCX</h2>
                     </a>
                  </div>
              <!-------------------Email contact-------------------------->
@@ -122,13 +133,13 @@
                              class="border-yellow-600 h-24 w-24 border-solid border-2 hover:border-yellow-800
                                     sm:border-yellow-600 sm:h-1/2 sm:w-auto sm:border-solid sm:rounded-2xl sm:border-2 sm:hover:border-yellow-800"
                                     alt="Email me :-)">
-                        <h2 class="text-2xl">email me</h2>
+                        <h2 class="text-2xl tracking-wide">email me</h2>
                     </a>
                 </div>
             </div>
         </div>
         <div class="bg-pink-100 row-span-1 col-span-1 order-12
-                    sm:bg-green-300 sm:row-span-1 sm:col-span-2 sm:order-10 sm:border-r-8  sm:border-blue-800 sm:rounded-sm sm:border-solid">18
+                    sm:bg-green-200 sm:row-span-1 sm:col-span-2 sm:order-10 ">18
         </div>
         <div class="bg-pink-100 row-span-1 order-12
                     sm:row-span-1 sm:col-span-1 sm:order-10 sm:bg-gradient-to-r sm:from-blue-400 sm:to-blue-800">19
@@ -139,9 +150,7 @@
         </div>
         <div class="bg-pink-100 row-span-1 order-12
                     sm:row-span-1 sm:col-span-1 sm:order-12 sm:bg-gradient-to-r sm:from-blue-400 sm:to-blue-800">c</div>
-
         </div>
-    </div>
     <!-------------------portfolio examples container----------------------->
 
 <div class="grid grid-cols-6 grid-rows-12 gap-0 h-full w-full
