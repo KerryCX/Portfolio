@@ -13,7 +13,7 @@
         .attribution a { color: hsl(228, 45%, 44%); }
     </style>
 </head>
-<body class="bg-blue-900">
+<body class=" sm:bg-gradient-to-r sm:from-pink-500 sm:to-blue-800">
 <main class="h-screen w-screen p-2 px-2 sm:px-10">
     <!--default for tailwind is mobile.-->
     <!--sm: for larger screens-->
@@ -26,47 +26,62 @@
                     sm:bg-pink-500 sm:order-1 sm-row-span-1 sm:col-span-1">1
         </div>
         <div class="bg-pink-500 order-2 row-span-1 col-span-1
-                    sm:bg-pink-500 sm:order-1 sm-row-span-1 sm:col-span-1 sm:bg-gradient-to-r sm:from-pink-500  sm:to-pink-200">2
+                     sm:order-1 sm-row-span-1 sm:col-span-1 sm:bg-gradient-to-r sm:from-pink-500  sm:to-pink-200">2
         </div>
         <div class="bg-pink-500 row-span-1 order-4
                     sm:bg-pink-200 sm:order-1 sm-row-span-1 sm:col-span-1">3
         </div>
         <div class="bg-pink-500 row-span-1 order-4
-                    sm:order-1 sm-row-span-1 sm:col-span-1 sm:bg-gradient-to-r sm:from-pink-200 sm:to-pink-100">4
+                    sm:order-1 sm-row-span-1 sm:col-span-1  sm:bg-pink-200">4
         </div>
         <div class="bg-pink-500 row-span-1 order-4
-                    sm:bg-pink-100 sm:order-1 sm-row-span-1 sm:col-span-1">5
+                     sm:order-1 sm-row-span-1 sm:col-span-1 sm:bg-gradient-to-r sm:from-pink-200 sm:to-blue-400">5
         </div>
         <div class="bg-pink-500 row-span-1 order-4
-                    sm:bg-pink-100 sm:order-1 sm-row-span-1 sm:col-span-1">6
+                     sm:order-1 sm-row-span-1 sm:col-span-1 sm:bg-gradient-to-r sm:from-blue-400 sm:to-blue-800">6
         </div>
         <!-------------------Kerry Clements container------------------------------>
         <div class="bg-pink-500 col-span-6 row-span-1 order-1
-                    sm:container sm:border-box sm:col-span-2 sm:row-span-1 sm:order-3
-                     sm:bg-yellow-300 sm:flex sm:flex-nowrap sm:items-end sm:justify-start">7
-            <h1 class="sm:text-8xl sm:text-blue-800">Kerry Clements</h1>
+                    sm:container sm:border-box sm:col-span-3 sm:row-span-1 sm:order-3
+                    sm:from-green-500 sm:to-green-300 sm:bg-gradient-to-t sm:flex sm:flex-nowrap
+                    sm:items-center sm:justify-center">7
+            <h1 class="sm:bg-blue-400 sm:text-8xl sm:text-blue-800 sm:border-8 sm:rounded-2xl
+                        sm:border-blue-800 sm:rounded-sm h-4/5 w-full sm:border-solid sm:bg-opacity-25">Kerry Clements
+            </h1>
+        </div>
+        <!--top right of main container-->
+        <div class="bg-pink-500 row-span-1 order-4
+                     sm:row-span-1 sm:order-3 sm:from-green-500 sm:to-blue-400 sm:bg-gradient-to-r">
+            <div class=" sm:from-green-300 sm:to-green-500 h-full sm:bg-gradient-to-b sm:bg-opacity-0
+            sm:bg-opacity-0 sm:border-blue-200 sm:border-2xl sm:rounded-tr-2xl sm:border-solid">
+            </div>
         </div>
         <div class="bg-pink-500 row-span-1 order-4
                     sm:bg-pink-500 sm:row-span-1 sm:order-2">8</div>
-        <div class="bg-pink-500 row-span-1 order-4
-                    sm:bg-green-300 sm:row-span-1 sm:order-8">9</div>
-        <div class="bg-pink-100 row-span-1 order-7
-                    sm:bg-green-300 sm:row-span-1 sm:order-8">10</div>
+        <div class="bg-pink-100 col-span-1 row-span-1 order-12
+                    sm:bg-pink-500 sm:row-span-1 sm:order-11">10</div>
         <div class="bg-pink-100 row-span-1 order-8
-                    sm:bg-green-300 sm:row-span-1 sm:order-8">11</div>
+                    sm:row-span-1 sm:order-8 sm:bg-gradient-to-r sm:from-blue-400 sm:to-blue-800">11</div>
         <!-------------------About me------------------------------>
         <div class="bg-pink-200 col-span-6 row-span-2 order-5 text-gray-800
-                    sm:container sm:border-box sm:px-5 sm:bg-green-200 sm:col-span-3 sm:row-span-2 sm:order-9
-                    sm:shadow-2xl sm:border-3 sm:border-yellow-400 sm:border-solid sm:overflow-y-auto sm:overflow-hidden
-                    sm:shadow-2xl sm:text-blue-800">12
-            <h2 class="text-1xl sm:text-4xl sm:text-left ">Hello, I am Kerry</h2>
-            <div class="text-sm sm:text-3xl sm:text-left sm:font-bold sm:pr-3 sm:pt-4 ">
-                <div>
-                    I am a web developer based in Bristol, UK.
-                    Returning to work in IT after starting a family, I have retrained as a web developer.
-                </div>
-                <div>
-                    I love the creative process of designing and coding websites.
+                    sm:container sm:border-box sm:px-5
+                    sm:bg-gradient-to-b sm:from-green-500 sm:to-green-200
+                    sm:col-span-3 sm:row-span-2 sm:order-9
+                    sm:shadow-2xl
+                    sm:overflow-y-auto
+                    sm:overflow-hidden sm:text-blue-800">12
+            <!-------------------border around the about me information------------------------------>
+            <div class="sm:border-8 sm:rounded-2xl
+                        sm:border-blue-800 sm:rounded-sm h-4/5 w-full sm:border-solid">
+                <h2 class="text-1xl sm:text-4xl sm:text-left sm:bg-opacity-25 sm:bg-blue-400">Hello, I am Kerry</h2>
+                <div class="text-sm sm:text-3xl sm:text-left sm:font-bold sm:pr-3 sm:pt-4 sm:pb-6  sm:bg-blue-400 sm:bg-opacity-25 sm:whitespace-wrap">
+                    <div>
+                        I am a web developer based in Bristol, UK.
+                        Returning to work in IT after starting a family, I have retrained as a web developer.
+                    </div>
+                    <div>
+                        I love the creative process of designing and coding websites.
+                    </div>
                 </div>
             </div>
         </div>
@@ -75,32 +90,39 @@
         <div class="bg-pink-100 row-span-1 order-8
                     sm:bg-pink-500 sm:row-span-1 sm:order-10">14</div>
 
+        <!-------------------container for Photo------------------------------>
         <div class="container box-border bg-green-200 row-span-2 col-span-2 flex order-3
-                   sm:container sm:box-border sm:bg-green-200 sm:row-span-2 sm:col-span-2 sm:flex sm:order-9">
-            <!-------------------Photo------------------------------>
+                   sm:container sm:box-border sm:bg-blue-800 sm:col-span-1 sm:flex sm:order-9">
+            <div class="sm:from-green-500 sm:to-green-200 sm:bg-gradient-to-b">
+                <!-------------------Photo------------------------------>
             <img src="/images/kerry.jpeg" class="h-auto w-auto border-solid border-2 border-white transform scale-90
                                                  sm:h-auto sm:w-auto sm:border-solid sm:border-8 sm:rounded-2xl
-                                                 sm:border-green-400 sm:shadow-2xl sm:transform sm:scale-90" alt="Profile Pic">
+                                                 sm:border-blue-900 sm:shadow-2xl sm:transform sm:scale-90 sm:bg-opacity-25
+                            sm:transition sm:duration-500 sm:origin-center sm-ease-in-out sm:transform sm:box-shadow  sm:hover:rotate-3
+                            " alt="Profile Pic"></div>
         </div>
+        <div class="bg-pink-100 row-span-1 order-8
+                   sm:row-span-2 sm:order-9 sm:bg-gradient-to-r sm:from-blue-400 sm:to-blue-800">move</div>
         <div class="bg-pink-100 col-span-1 row-span-1 order-12
                     sm:bg-pink-500 sm:row-span-1 sm:order-10">15</div>
         <div class="bg-pink-100 row-span-1 order-12
-                    sm:bg-green-300 sm:row-span-1 sm:order-11">16</div>
+                    sm:bg-green-200 sm:row-span-1 sm:order-10 ">16</div>
         <!-------------------contact me------------------------------>
         <!-------------------outside container----------------------->
-        <div class="box-border bg-pink-100 col-span-4 order-7
-                    sm:bg-yellow-300 sm:col-span-2 sm:order-10 flex-shrink-0">17
+        <div class="box-border bg-pink-100 col-span-4 order-7 sm:flex
+                    sm:container sm:box-border sm:bg-green-200 sm:col-span-1 sm:order-10 pt-12">17
             <!-------contact me split into columns, one for each contact method------------------>
-            <div class=" grid grid-cols-2 grid-rows-1 justify-items-center pt-8">
+            <div class="sm:container sm:flex sm:box-border grid grid-cols-2 grid-rows-1">
              <!-------------------Git Hub contact-------------------------->
                  <div class="sm:transition sm:duration-500 sm-ease-in-out sm:transform sm:box-shadow sm:hover:-translate-y-1
                             sm:hover-scale-110">
                      <a href="https://github.com/KerryCX/">
                         <img src="/images/Octocat.jpg"
-                             class="border-yellow-600 h-24 w-24 border-solid border-2 hover:border-yellow-800
-                                    sm:border-yellow-600 sm:h-24 sm:w-24 sm:border-solid sm:border-2 sm:hover:border-yellow-800"
+                             class="border-yellow-600 h-16 w-16 border-solid border-2 hover:border-yellow-800
+                                    sm:border-yellow-600 sm:h-1/2 sm:w-auto sm:border-solid sm:rounded-2xl sm:border-2
+                                    sm:hover:border-yellow-800"
                              alt="My Git Hub :-)">
-                     <h2 class="text-1xl sm:-text-1xl">KerryCX</h2>
+                     <h2 class="text-1xl sm:text-2xl tracking-wide">KerryCX</h2>
                     </a>
                  </div>
              <!-------------------Email contact-------------------------->
@@ -109,60 +131,83 @@
                     <a href="mailto:kerryclements@me.com">
                         <img src="/images/email-icon.jpg"
                              class="border-yellow-600 h-24 w-24 border-solid border-2 hover:border-yellow-800
-                                    sm:border-yellow-600 sm:h-24 sm:w-24 sm:border-solid sm:border-2 sm:hover:border-yellow-800"
+                                    sm:border-yellow-600 sm:h-1/2 sm:w-auto sm:border-solid sm:rounded-2xl sm:border-2 sm:hover:border-yellow-800"
                                     alt="Email me :-)">
-                        <h2 class="text-1xl">email me</h2>
+                        <h2 class="text-2xl tracking-wide">email me</h2>
                     </a>
                 </div>
             </div>
         </div>
         <div class="bg-pink-100 row-span-1 col-span-1 order-12
-                    sm:bg-green-300 sm:row-span-1 sm:col-span-1 sm:order-12">18
+                    sm:bg-green-200 sm:row-span-1 sm:col-span-2 sm:order-10 ">18
         </div>
         <div class="bg-pink-100 row-span-1 order-12
-                    sm:bg-green-300 sm:row-span-1 sm:col-span-1 sm:order-12">19
+                    sm:row-span-1 sm:col-span-1 sm:order-10 sm:bg-gradient-to-r sm:from-blue-400 sm:to-blue-800">19
         </div>
+
         <div class="bg-blue-900 row-span-1 order-12
-                    sm:bg-blue-900 sm:row-span-1 sm:col-span-2 sm:order-12 sm:text-8xl">
+                    sm:bg-blue-800 sm:row-span-1 sm:col-span-4 sm:order-11 sm:text-8xl text-center">Examples
         </div>
-        <div class="bg-blue-900 row-span-1 order-12
-                    sm:bg-blue-900 sm:row-span-1 sm:col-span-2 sm:order-12 sm:text-8xl text-center">Examples
+        <div class="bg-pink-100 row-span-1 order-12
+                    sm:row-span-1 sm:col-span-1 sm:order-12 sm:bg-gradient-to-r sm:from-blue-400 sm:to-blue-800">c</div>
         </div>
-        <div class="bg-blue-900 row-span-1 order-12
-                    sm:bg-blue-900 sm:row-span-1 sm:col-span-2 sm:order-12 sm:text-8xl">
-        </div>
-    </div>
     <!-------------------portfolio examples container----------------------->
 
 <div class="grid grid-cols-6 grid-rows-12 gap-0 h-full w-full
                 sm:grid sm:grid-cols-6 sm:grid-rows-6 sm:gap-0 sm:h-full sm:w-full">
-    <div class="sm:bg-blue-300 sm:row-span-1 sm:col-span-2 sm:h-64">mew</div>
-    <div class="sm:bg-gray-800 order-12 sm:bg-blue-100 sm:row-span-1 sm:h-64 sm:col-span-2 sm:order-1 sm:overflow-y-auto sm:overflow-hidden">hola
-            <a href="https://github.com/KerryCX/" class="sm:flex sm:justify-center sm:pt-8">
-                <img src="/images/time-tracking-dashboard-mv.png"
-                     class="sm:h-48 sm:w-auto sm:border-solid sm:border-2 sm:border-yellow-600 "
-                     alt="Time tracking dashboard project">
-            </a>
+    <!------------------- container for photo of example site 1------------------------------->
+    <div class="sm:bg-blue-800 sm:row-span-1 sm:col-span-1 sm:h-64 sm:text-4xl pt-1">Time Dashboard
+        <!-------------------photo of example site 1------------------------------->
+        <a href="https://github.com/KerryCX/" class="sm:flex sm:justify-center ">
+            <img src="/images/time-tracking-dashboard-mv.png"
+                 class="sm:h-48 sm:w-auto sm:border-solid sm:border-2 sm:border-yellow-600 "
+                 alt="Time tracking dashboard project">
+        </a>
     </div>
-    <div class="text-blue-200 sm:order-2 sm:row-span-1 sm:h-64 sm:col-span-2">
+    <!-------------------container for the description of example site 1------------------------------->
+    <div class="order-12 sm:bg-blue-600 sm:row-span-1 sm:h-64 sm:col-span-2 sm:order-1 sm:overflow-y-auto sm:overflow-hidden">
+        <!-------------------description of example site 1------------------------------->
+        <div class="text-blue-200 sm:text-2xl sm:order-2 sm:row-span-1 sm:h-64 sm:col-span-2">
             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
             when an unknown printer took a galley of type and scrambled it to make a type specimen book.
             It has survived not only five centuries, but also the leap into electronic typesetting,
             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
             when an unknown printer took a galley of type and scrambled it to make a type s
+        </div>
+    </div>
+
+    <!------------------- container for photo of example site 2------------------------------->
+    <div class="sm:bg-blue-600 sm:row-span-1 sm:col-span-1 sm:h-64 order-3 sm:border-l sm:border-0 order-3 sm:text-4xl">Tiles
+        <!-------------------photo of example site 1------------------------------->
+        <a href="https://github.com/KerryCX/" class="sm:flex sm:justify-center sm:pt-1">
+            <img src="/images/time-tracking-dashboard-mv.png"
+                 class="sm:h-48 sm:w-auto sm:border-solid sm:border-2 sm:border-yellow-600 "
+                 alt="Time tracking dashboard project">
+        </a>
+    </div>
+    <!-------------------container for the description of example site 2------------------------------->
+    <div class="order-3 sm:bg-blue-600 sm:row-span-1 sm:h-64 sm:col-span-2 sm:order-4 sm:overflow-y-auto sm:overflow-hidden">
+        <!-------------------description of example site 1------------------------------->
+        <div class="text-blue-200 sm:text-2xl sm:order-4 sm:row-span-1 sm:h-64 sm:col-span-2 order-4">
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+            when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+            It has survived not only five centuries, but also the leap into electronic typesetting,
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+            when an unknown printer took a galley of type and scrambled it to make a type s
+        </div>
     </div>
 </div>
-    <div class="sm:inline-block bg-blue-900 col-span-6 order-12
-                    sm:bg-blue-700 sm:row-span-1 sm:col-span-1 sm:order-12">21</div>
-    <div class="bg-gray-800 col-span-6 order-12
-                    sm:bg-blue-900 sm:row-span-1 sm:col-span-1 sm:order-12">22</div>
-    <div class="bg-gray-600 col-span-6 order-12
-                    sm:bg-blue-700 sm:row-span-1 sm:col-span-1 sm:order-12">23</div>
-    <div class="bg-pink-800 col-span-6 order-12
-                    sm:bg-blue-900 sm:row-span-1 sm:col-span-1 sm:order-12">24</div>
-    <div class="bg-pink-400 col-span-6 order-12
-                    sm:bg-blue-700 sm:row-span-1 sm:col-span-1 sm:order-12">25</div>
-</div>
+  <div>
+
+      <div class="bg-gray-800 col-span-6 order-12
+                        sm:bg-blue-800 sm:row-span-1 sm:col-span-1 sm:order-12">22</div>
+      <div class="bg-gray-600 col-span-6 order-12
+                        sm:bg-blue-700 sm:row-span-1 sm:col-span-1 sm:order-12">23</div>
+      <div class="bg-pink-800 col-span-6 order-12
+                        sm:bg-blue-800 sm:row-span-1 sm:col-span-1 sm:order-12">24</div>
+      <div class="bg-pink-400 col-span-6 order-12
+                        sm:bg-blue-700 sm:row-span-1 sm:col-span-1 sm:order-12">25</div>
+  </div>
 </main>
 
 <div class="attribution">
