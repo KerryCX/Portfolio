@@ -14,12 +14,17 @@
     </style>
 </head>
 <body class="sm:bg-gradient-to-r sm:from-pink-800 sm:via-indigo-400 sm:to-blue-800">
-<nav class="cursor-pointer fixed container border-box top-0 right-0 h-48 w-48 border-0 border-solid border-pink-100 rounded-2xl bg-indigo-500 object-right-top
+<nav class="cursor-pointer fixed container border-box top-0 right-0 h-48 w-48 border-0 border-solid
+            bg-gradient-to-tr from-green-400 to-blue-800 rounded-2xl bg-indigo-500 object-right-top
             sm:transition sm:duration-1000 sm-ease-in-out sm:transform sm:box-shadow sm:hover:-translate-x-4 sm:hover:m-8
-            sm:hover:translate-y-4 sm:hover:scale-150 py-16  px-12">
-    <div class="bg-indigo-500">
-    <ul class="text-blue-200 list-disc">
-        <li>Portfolio</li><li>Contact Me</li><li>About Me</li></ul></div>
+            sm:hover:translate-y-4 sm:hover:scale-150 py-14  pl-12">
+    <div class="bg-opacity-0">
+        <ul class="text-blue-200 p-2 list-disc text-1xl">
+            <li>Portfolio</li>
+            <li>Contact Me</li>
+            <li>About Me</li>
+        </ul>
+    </div>
 
 </nav>
 
@@ -32,61 +37,82 @@
                 sm:grid sm:grid-cols-6 sm:grid-rows-6 sm:gap-0 sm:h-full sm:w-full ">
         <!-------------------row 1------------------------------>
         <div class="bg-pink-500 order-2 row-span-1 col-span-1
-                    sm:bg-gradient-to-r sm:from-pink-800 sm:to-pink-400 sm:order-1 sm-row-span-1 sm:col-span-1">1
+                    sm:order-1 sm:bg-gradient-to-r sm:from-pink-800 sm:to-pink-400
+                    sm-row-span-1 sm:col-span-1 sm:bg-opacity-0">border top left
         </div>
         <div class="bg-pink-500 order-2 row-span-1 col-span-1
-                     sm:order-1 sm-row-span-1 sm:col-span-1 sm:bg-gradient-to-r sm:from-pink-400  sm:to-pink-200">2
+                     sm:order-1 sm-row-span-1 sm:col-span-1 sm:bg-gradient-to-r
+                     sm:from-pink-400  sm:to-pink-200">border top leftish
         </div>
         <div class="bg-pink-500 row-span-1 order-4
-                    sm:bg-pink-200 sm:order-1 sm-row-span-1 sm:col-span-1">3
+                    sm:bg-pink-200 sm:order-1 sm-row-span-1 sm:col-span-1">top border middle left
         </div>
         <div class="bg-pink-500 row-span-1 order-4
-                    sm:order-1 sm-row-span-1 sm:col-span-1  sm:bg-pink-200">4
+                    sm:order-1 sm-row-span-1 sm:col-span-1 sm:bg-pink-200">top border middle right
         </div>
         <div class="bg-pink-500 row-span-1 order-4
-                     sm:order-1 sm-row-span-1 sm:col-span-1 sm:bg-gradient-to-r sm:from-pink-200 sm:to-blue-400">5
+                     sm:order-1 sm-row-span-1 sm:col-span-1 sm:bg-gradient-to-r
+                     sm:from-pink-200 sm:to-blue-400">border top rightish
         </div>
         <div class="bg-pink-500 row-span-1 order-4
-                     sm:order-1 sm-row-span-1 sm:col-span-1 sm:bg-gradient-to-r sm:from-blue-400 sm:to-blue-800">6
+                     sm:order-1 sm-row-span-1 sm:col-span-1 sm:bg-gradient-to-r
+                     sm:from-blue-400 sm:to-blue-800">border top right
         </div>
+
+        <div class="bg-pink-500 row-span-1 order-4
+                    sm:order-2 sm:bg-gradient-to-r sm:from-pink-800 sm:to-pink-400 sm:row-span-1">border left top</div>
+
         <!-------------------Kerry Clements container------------------------------>
         <!--top left of main container-->
-        <div class="bg-pink-500 col-span-6 row-span-1 order-1
-                    sm:container sm:border-box sm:h-auto sm:w-auto sm:col-span-3 sm:row-span-1 sm:order-3
-                    sm:from-green-300 sm:to-pink-500 sm:bg-gradient-to-l sm:flex sm:flex-nowrap
-                    sm:items-center sm:justify-center">
-            <div class="sm:from-green-500 sm:to-green-300 sm:h-full sm:w-full sm:bg-gradient-to-t sm:border-2xl sm:rounded-tl-2xl sm:pt-5 sm:px-5">
-                <h1 class="sm:bg-blue-400 sm:text-8xl text-6xl sm:text-blue-800 sm:border-8 sm:rounded-2xl
-                        sm:container sm:box-border sm:border-blue-800 sm:rounded-sm h-auto w-auto sm:border-solid sm:bg-opacity-50">Kerry Clements
+        <div class="bg-pink-200 col-span-6 row-span-1 order-1
+                    sm:order-3 sm:container sm:border-box sm:h-auto sm:w-auto sm:col-span-3 sm:row-span-1
+                    sm:bg-green-500  sm:flex sm:flex-nowrap sm:items-center sm:justify-center">
+            <div class="sm:bg-green-500 sm:h-full sm:w-full sm:border-2xl sm:rounded-tl-2xl sm:pt-5 sm:px-5">tl
+                <h1 class="sm:bg-blue-400 text-lg lg-:text-8xl sm:text-6xl md:text-6xl sm:text-blue-800 sm:border-8
+                sm:rounded-2xl sm:container sm:box-border sm:border-blue-800 sm:rounded-sm h-auto w-auto
+                sm:border-solid sm:bg-opacity-75">Kerry Clements
                 </h1>
             </div>
         </div>
         <!--top right of main container-->
-        <div class="bg-pink-500 row-span-1 order-4
-                     sm:row-span-1 sm:order-3 sm:from-green-500 sm:to-blue-400 sm:bg-gradient-to-r">
-            <div class=" sm:from-green-300 sm:to-green-500 h-full sm:bg-gradient-to-b sm:bg-opacity-0
-            sm:bg-opacity-0 sm:border-2xl sm:rounded-tr-2xl sm:border-solid">
+        <!------------------------container for Photo------------------------------>
+        <div class="order-4 bg-pink-500 row-span-1
+            sm:order-3 sm:row-span-2 sm:col-span-1 sm:flex  sm:from-green-500 sm:to-blue-400 sm:bg-gradient-to-r">
+            <div class="container border-box h-full sm:from-green-500 sm:to-green-500 sm:bg-gradient-to-b
+            sm:border-2xl sm:rounded-tr-2xl sm:border-solid">tr
+                <div>
+                    <!-------------------------------Photo--------------------------------->
+                    <img src="/images/kerry.jpeg"
+                         class="float-right h-auto w-auto border-solid border-2 border-white transform scale-120
+                        sm:h-auto sm:w-auto sm:border-solid sm:border-8 sm:rounded-2xl
+                        sm:border-blue-900 sm:shadow-2xl sm:transform sm:scale-90
+                        sm:bg-opacity sm:transition sm:duration-500 sm:origin-center sm-ease-in-out
+                        sm:transform sm:box-shadow sm:hover:rotate-3" alt="Profile Pic">
+                </div>
+
             </div>
         </div>
-        <div class="bg-pink-500 row-span-1 order-4
-                     sm:bg-gradient-to-r sm:from-pink-800 sm:to-pink-400 sm:row-span-1 sm:order-2">8</div>
-        <div class="bg-pink-100 col-span-1 row-span-1 order-12
-                    sm:bg-gradient-to-r sm:from-pink-400 sm:to-pink-300 sm:row-span-1 sm:order-11 ">10</div>
+        <!--DT---border---top right of main container-->
         <div class="bg-pink-100 row-span-1 order-8
-                    sm:row-span-1 sm:order-8 sm:bg-gradient-to-r sm:from-blue-400 sm:to-blue-800">11</div>
+                    sm:order-5 sm:row-span-1 sm:bg-gradient-to-r sm:from-blue-400 sm:to-blue-800">border right top</div>
+        <!--DT---border---middle right of main container-->
+        <div class="bg-pink-100 row-span-1 order-8
+                   sm:order-8 sm:row-span-1 sm:bg-gradient-to-r sm:from-blue-400 sm:to-blue-800">border right</div>
+
         <!-------------------About me------------------------------>
-        <div class="bg-pink-200 col-span-6 row-span-2 order-5 text-gray-800
-                    sm:container sm:border-box sm:px-5
-                    sm:bg-gradient-to-b sm:from-green-500 sm:to-green-200
-                    sm:col-span-3 sm:row-span-2 sm:order-9
+        <div class="order-5 bg-pink-200 col-span-6 row-span-2 text-gray-800
+                    sm:container sm:border-box
+                    sm:bg-green-500
+                    sm:col-span-3 sm:row-span-2 sm:order-7
                     sm:shadow-2xl
                     sm:overflow-y-auto
-                    sm:overflow-hidden sm:text-blue-800">12
+                    sm:overflow-hidden sm:text-blue-800 px-3">12
             <!-------------------border around the about me information------------------------------>
-            <div class="sm:container sm:border-box sm:border-8 sm:rounded-2xl
-                        sm:border-blue-800 sm:rounded-sm h-auto w-auto sm:border-solid">
-                <h2 class="text-1xl sm:text-4xl sm:text-left sm:bg-opacity-25 sm:bg-blue-400">Hello, I am Kerry</h2>
-                <div class="text-sm sm:text-3xl sm:text-left sm:font-bold sm:pr-3 sm:pt-4 sm:pb-6 sm:bg-blue-400 sm:bg-opacity-25 sm:whitespace-wrap">
+            <div class="container border-box sm:border-8 sm:rounded-2xl
+                        sm:border-blue-800 sm:rounded-sm h-auto w-auto sm:border-solid sm:font-bold">
+                <h2 class="text-1xl sm:text-4xl sm:text-left bg-opacity-75 sm:bg-blue-400">Hello, I am Kerry</h2>
+                <div class="text-sm sm:text-lg md:text-2xl sm:text-left  sm:pr-3
+                sm:pt-4 sm:pb-6 sm:bg-blue-400 bg-opacity-75 sm:whitespace-wrap">
                     <div>
                         I am a web developer based in Bristol, UK.
                         Returning to work in IT after starting a family, I have retrained as a web developer.
@@ -98,29 +124,26 @@
             </div>
         </div>
         <div class="bg-pink-100 row-span-1 order-8
-                     sm:bg-gradient-to-r sm:from-pink-800 sm:to-pink-400 sm:row-span-1 sm:order-8">13</div>
-        <div class="bg-pink-100 row-span-1 order-8
-                     sm:bg-gradient-to-r sm:from-pink-800 sm:to-pink-400 sm:row-span-1 sm:order-10">14</div>
+                     sm:bg-gradient-to-r sm:from-pink-800 sm:to-pink-400 sm:row-span-1 sm:order-6">border left</div>
 
-        <!-------------------container for Photo------------------------------>
-        <div class="container border-box bg-green-200 row-span-2 col-span-2 flex order-3
-                   sm:container sm:border-box sm:bg-blue-800 sm:col-span-1 sm:flex sm:order-9">
-            <div class="sm:from-green-500 sm:to-green-200 sm:bg-gradient-to-b">
-                <!-------------------Photo------------------------------>
-            <img src="/images/kerry.jpeg" class="float-right h-auto w-auto border-solid border-2 border-white transform scale-120
-                                                 sm:h-auto sm:w-auto sm:border-solid sm:border-8 sm:rounded-2xl
-                                                 sm:border-blue-900 sm:shadow-2xl sm:transform sm:scale-90 sm:bg-opacity-25
-                            sm:transition sm:duration-500 sm:origin-center sm-ease-in-out sm:transform sm:box-shadow  sm:hover:rotate-3
-                            " alt="Profile Pic"></div>
-        </div>
         <div class="bg-pink-100 row-span-1 order-8
-                   sm:row-span-2 sm:order-9 sm:bg-gradient-to-r sm:from-blue-400 sm:to-blue-800">move</div>
+                    sm:order-9 sm:bg-gradient-to-r sm:from-pink-800 sm:to-pink-400 sm:row-span-1">border left1</div>
+        <div class="container border-box bg-green-500 row-span-1 col-span-1 flex order-3
+                   sm:order-9 sm:container sm:border-box sm:col-span-1 sm:flex ">mr
+        </div>
+        <!--DT---border---middle right of main container-->
+        <div class="bg-pink-100 row-span-1 order-8
+                   sm:order-9 sm:row-span-1 sm:bg-gradient-to-r sm:from-blue-400 sm:to-blue-800">border right1</div>
         <div class="bg-pink-100 col-span-1 row-span-1 order-12
-                     sm:bg-gradient-to-r sm:from-pink-800 sm:to-pink-400 sm:row-span-1 sm:order-10">15</div>
+                     sm:bg-gradient-to-r sm:from-pink-800 sm:to-pink-400 sm:row-span-1 sm:order-11">border left3</div>
+
+        <div class="bg-pink-100 row-span-1 order-12
+                    sm:order-10 sm:row-span-1 sm:col-span-1 sm:bg-gradient-to-r sm:from-pink-800 sm:to-pink-400">border left2
+        </div>
         <!--bottom left of main container-->
         <div class="bg-pink-500 row-span-1 order-12
-                    sm:bg-pink-400 sm:row-span-1 sm:order-10 ">
-            <div class="sm:bg-green-200 sm:h-full sm:w-full sm:border-2xl sm:rounded-bl-2xl sm:pt-5 sm:px-5">16
+                    sm:order-10 sm:bg-pink-400 sm:row-span-1">
+            <div class="sm:bg-green-500 sm:h-full sm:w-full sm:border-2xl sm:rounded-bl-2xl sm:pt-5 sm:px-5">bl
             </div>
         </div>
 
@@ -128,7 +151,7 @@
 
         <!-------------------outside container----------------------->
         <div class="bg-pink-100 col-span-4 order-7
-                    sm:container sm:box-border sm:bg-green-200 sm:col-span-1 sm:order-10">17
+                    sm:container sm:box-border sm:bg-green-500 sm:col-span-1 sm:order-10">contact me
             <!-------contact me split into flex columns, one for each contact method------------------>
             <div class="sm:flex sm:flex-row  sm:items-bottom gap-2 place-content-evenly">
              <!-------------------Git Hub contact-------------------------->
@@ -144,7 +167,7 @@
                  </div>
              <!-------------------Email contact-------------------------->
                 <div class="sm:transition sm:duration-500 sm-ease-in-out sm:transform sm:box-shadow sm:hover:-translate-y-1
-                            sm:hover-scale-110  h-24 w-24">
+                            sm:hover-scale-110 h-24 w-24">
                     <a href="mailto:kerryclements@me.com">
                         <img src="/images/email-icon.png"
                              class="border-yellow-600 sm:h-full border-solid border-2 hover:border-yellow-800
@@ -156,29 +179,38 @@
             </div>
         </div>
 
+        <div class="bg-pink-100 row-span-1 col-span-1 order-12
+                    sm:order-10  sm:row-span-1 sm:col-span-1 sm:bg-green-500 sm:w-full sm:h-full">bm
+
+        </div>
+
         <!--bottom right of main container-->
         <div class="bg-pink-100 row-span-1 col-span-1 order-12
-                    sm:bg-blue-400 sm:row-span-1 sm:col-span-2 sm:order-10">
-            <div class="sm:bg-green-200 sm:border-2xl sm:rounded-br-2xl sm:h-full sm:w-full">
+                    sm:order-10 sm:bg-blue-400 sm:row-span-1 sm:col-span-1 ">
+            <div class="sm:bg-green-500 sm:border-2xl sm:rounded-br-2xl sm:h-full sm:w-full">br
             </div>
         </div>
+        <!--DT---border---bottom right of main container-->
+        <div class="bg-pink-100 row-span-1 order-12
+                    sm:order-10 sm:row-span-1 sm:col-span-1 sm:bg-gradient-to-r sm:from-blue-400 sm:to-blue-800">border right2
+        </div>
 
-        <div class="bg-pink-100 row-span-1 order-12
-                    sm:row-span-1 sm:col-span-1 sm:order-10 sm:bg-gradient-to-r sm:from-blue-400 sm:to-blue-800">19
+        <div class="bg-pink-100 col-span-1 row-span-1 order-12
+                    sm:order-11 sm:bg-gradient-to-r sm:from-pink-400 sm:to-pink-300 sm:row-span-1 ">examples left
         </div>
-        <div class="bg-pink-100 row-span-1 order-12
-                    sm:row-span-1 sm:col-span-1 sm:order-10  sm:bg-gradient-to-r sm:from-pink-800 sm:to-pink-400">19
-        </div>
+
         <div class="bg-blue-900 row-span-1 order-12
-                    sm:bg-gradient-to-r sm:from-pink-300 sm:to-blue-300 sm:row-span-1 sm:col-span-2 sm:order-11 sm:text-8xl text-center">Examples
+                    sm:order-11 sm:bg-gradient-to-r sm:from-pink-300 sm:to-blue-300 sm:row-span-1 sm:col-span-2
+                    sm:text-8xl text-center text-blue-800">Examples
         </div>
 
 
         <div class="bg-pink-100 row-span-1 order-12
-                    sm:bg-gradient-to-r sm:from-blue-300 sm:to-blue-400  sm:row-span-1 sm:col-span-1 sm:order-12">c
+                    sm:order-12 sm:bg-gradient-to-r sm:from-blue-300 sm:to-blue-400  sm:row-span-1 sm:col-span-1">examples right
         </div>
+        <!--DT---border---right of examples -->
         <div class="bg-pink-100 row-span-1 order-12
-                    sm:bg-gradient-to-r sm:from-blue-400 sm:to-blue-800 sm:row-span-1 sm:col-span-1 sm:order-12">c
+                    sm:order-12 sm:bg-gradient-to-r sm:from-blue-400 sm:to-blue-800 sm:row-span-1 sm:col-span-1">border right3
         </div>
     </div>
 
